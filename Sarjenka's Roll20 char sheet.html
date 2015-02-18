@@ -1,0 +1,1559 @@
+<!-- Sarjenka Aeristan's custom character sheet for Dungeons and Dragons 3rd edition, in Roll20.net     -->
+
+<div class='sheet-2colrow' > <!-- First "block": general CHARACTER information -->
+    <div class='sheet-col' style="width: 520px; margin-right: 0px; padding-right: 0px;"> <!-- First row: basic CHARACTER info, displayed at the upper left -->
+        <table style="height: 100px;">
+            <tr>
+                <td>
+                    <div style="float: left"><h3 style="text-align: center; background-color: #000000; color: #FFF;">&nbsp; Character's Name</h3><input type="text" class="sheet-inputbox-primary" name="attr_Char_Name" title="your Character's Name" style="width: 255px;"/></div>
+                    <div style="float: left"><h3 style="text-align: left;">&nbsp; Player's Name</h3><input type="text" class="sheet-inputbox" name="attr_Player_Name" title="your 'real' name" style="width: 250px;"/></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="float: left">Race<br>
+                    <select name="attr_Race" title="Race" style="width: 90px">
+                        <option>other</option>
+                        <option>Aasimar</option>
+                        <option>Elf (drow)</option>
+                        <option>Elf (moon)</option>
+                        <option>Elf (sun)</option>
+                        <option>Elf (wood)</option>
+                        <option>Elf (wild)</option>
+                        <option>Dwarf</option>
+                        <option>Genasi (air)</option>
+                        <option>Genasi (earth)</option>
+                        <option>Genasi (fire)</option>
+                        <option>Genasi (water)</option>
+                        <option>Gnome</option>
+                        <option>Goblin</option>
+                        <option>Half Elf</option>
+                        <option>Half Orc</option>
+                        <option>Halfling</option>        
+                        <option>Hobgoblin</option>
+                        <option selected>Human</option>
+                        <option>Kobold</option>
+                        <option>Lizardfolk</option>
+                        <option>Orc</option>
+                        <option>Tiefling</option>
+                    </select>
+                    </div>
+                    <div style="float: left">Gender<br>
+                    <select name="attr_Gender" title="Gender" style="width: 80px">
+                        <option></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Both</option>
+                        <option>None</option>
+                    </select>
+                    </div>
+                    <div style="float: left">Size<br>
+                    <select name="attr_Size" title="Size" style="width: 90px">
+                        <option>Colossal</option>
+                        <option>Gargantuan</option>
+                        <option>Huge</option>
+                        <option>Large</option>
+                        <option selected>Medium</option>
+                        <option>Small</option>        
+                        <option>Tiny</option> 
+                        <option>Diminutive</option>
+                        <option>Fine</option>
+                    </select>
+                    </div>
+                    <div style="float: left">Alignment<br>
+                    <select name="attr_Alignment" title="Alignment" style="width: 120px">
+                        <option>Lawful Good</option>
+                        <option>Neutral Good</option>
+                        <option>Chaotic Good</option>
+                        <option>Lawful Neutral</option>
+                        <option selected>Neutral</option>
+                        <option>Chaotic Neutral</option>
+                        <option>Lawful Evil</option>
+                        <option>Neutral Evil</option>
+                        <option>Chaotic Evil</option>
+                    </select></div>
+                    <div style="float: left">Patron Diety<br><input type="text" name="attr_Patron_Diety" title="Patron_Diety" style="width: 125px;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="float: left">Age<br><input type="number" name="attr_Age" title="Age" style="width: 60;"></div>
+                    <div style="float: left">Height<br><input type="text" name="attr_Height" title="Height" style="width: 80px;"></div>
+                    <div style="float: left">Weight<br><input type="text" name="attr_Weight" title="Weight" style="width: 65px;"></div>
+                    <div style="float: left">Hair<br><input type="text" name="attr_HairColor" title="the color of your hair" style="width: 65px;"></div>
+                    <div style="float: left">Eyes<br><input type="text" name="attr_EyeColor" title="the color of your eyes" style="width: 65px;"></div>
+                    <div style="float: left">Home Region<br><input type="text" name="attr_Region" title="Region" style="width: 185px;"></div>
+                </tr>
+            </td>
+        </table>
+    </div>
+    <div class='sheet-col' style="width: 250px;"> <!-- The image displayed at the upper right -->
+        <table style="height: 100px;">
+            <tr style="text-align: center;"><br>
+                <td>  
+                    <img src="https://s3.amazonaws.com/files.d20.io/images/6667345/W9WxEaz_RfbzZgKXsNa1uA/thumb.png?1418313312" style="width: 250px;"></img>
+                </td>
+            </tr>
+        </table> 
+    </div>
+    <br>
+    <br>
+</div>  <!-- sheet-2colrow -->
+
+<div class="sheet-character-sheet sheet-stats">
+    <div>
+        <h3 style="text-align: center; background-color: #000000; color: #FFF;">Ability Scores and Statistics</h3><br>
+        <div class='sheet-2colrow'> <!-- Second "block": Hit Points, Abilities, Saves, Init, and Base Attack -->
+            <div class='sheet-col' style="width: 290px;">
+                <!-- First 'column' of second 'row': HIT POINTS and ABILITY SCORES -->
+                <table> <!-- HIT POINTS -->
+                    <tr> 
+                        <th style="background-color: #000000; color: #FFF;">&nbsp;</th><th style="background-color: #000000; color: #FFF; width: 100px;">Current:</th><th style="background-color: #000000; color: #FFF; width: 100px;">Maximum:</th>
+                    </tr>
+                    <tr>
+                        <td class="sheet-initlabel" style="font-size: 1.4em; background-color: #000000; color: #FFF; text-align: center; float: none; height: 34px; width: 60px; display: block;">Hit</td>
+                        <td>&nbsp; <input class="sheet-inputbox-primary" type="number" value="0" name="attr_HP" title="current Hit Points" style="text-align: center; width: 70px; font-size: 1.4em;" /><span style="font-size: 2.4em;"> / </span></td>   
+                        <td>&nbsp; <input class="sheet-inputbox-primary" type="number" value="0" name="attr_HP_max" title="maximum Hit Points" style="text-align: center; width: 70px; font-size: 1.4em;" /></td>   
+                        <td style="width: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-initlabel" style="font-size: 1.4em; background-color: #000000; color: #FFF; text-align: center; float: none; width: 60px; display: block;">Points</td>
+                        <td style="background-color: #000000; text-align: center; color: #FFF;">Subdual:</td><td style="background-color: #000000; text-align: center; color: #FFF; width: 80px;">Bleed:</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td style="background-color: #000000; color: #FFF;">&nbsp;</td>
+                        <td>&nbsp; <input class="sheet-inputbox" type="number" value="0" name="attr_Subdual" title="subdual damage taken" style="text-align: center; width: 48px; font-size: 1.4em;" /></td>
+                        <td>&nbsp; <input class="sheet-inputbox" type="number" value="0" name="attr_Bleed" title="Bleed damage every round" style="text-align: center; width: 48px; font-size: 1.4em;" /></td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <td class="sheet-DRlabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; width: 130px; display: block;"><b>Damage Reduction:</b></label>
+                    <td>&nbsp;<input class="sheet-inputbox" type="text" name="attr_Damage_Reduction" title="any other form of Damage Reduction this character might possess" style="height: 24px; width: 130px;" />&nbsp;</td>
+                </table>
+                <br>
+                <table> <!-- ABILITY SCORES -->
+                    <tr style="font-size: 0.8em;">
+                        <th style="background-color: #000000; color: #FFF;">Ability:</th><th style="background-color: #000000; color: #FFF;">Base:</th><th style="background-color: #000000; color: #FFF;">Enhance:</th><th style="background-color: #000000; color: #FFF;">Damage:</th><th style="background-color: #000000; color: #FFF;">Current:</th><th style="background-color: #000000; color: #FFF;">Mod:</th>
+                    </tr>
+                    <tr>
+                        <td class="sheet-statlabel" style="background-color: #000000; color: #FFF; text-align: center;">STR</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="10" name="attr_STR_base" title="base Strength" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_STR_enhance" title="enhancement bonus to Strength" style="height: 24px; width: 40px;" /> -</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_STR_damage" title="ability damage to Strength" style="height: 24px; width: 40px; color: #CC3300;" /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" value="10" name="attr_STR" title="current Strength" style="height: 24px; width: 40px;" /></td>
+                        <td><input class="sheet-inputbox-disabled" type="number" name="attr_STR_mod" title="current Strength modifier" style="height: 24px; width: 40px;" value="floor(@{STR}/2-5)" disabled="true"/></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-statlabel" style="background-color: #000000; color: #FFF; text-align: center;">DEX</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="10" name="attr_DEX_base" title="base Dexterity" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_DEX_enhance" title="enhancement bonus to Dexterity" style="height: 24px; width: 40px;" /> -</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_DEX_damage" title="ability damage to Dexterity" style="height: 24px; width: 40px; color: #CC3300;" /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" value="10" name="attr_DEX" title="current Dexterity" style="height: 24px; width: 40px;" /></td>
+                        <td><input class="sheet-inputbox-disabled" type="number" name="attr_DEX_mod" title="current Dexterity modifier" style="height: 24px; width: 40px;" value="floor(@{DEX}/2-5)" disabled="true"/></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-statlabel" style="background-color: #000000; color: #FFF; text-align: center;">CON</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="10" name="attr_CON_base" title="base Constitution" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_CON_enhance" title="enhancement bonus to Constitution" style="height: 24px; width: 40px;" /> -</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_CON_damage" title="ability damage to Constitution" style="height: 24px; width: 40px; color: #CC3300;" /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" value="10" name="attr_CON" title="current Constitution "style="height: 24px; width: 40px;" /></td>
+                        <td><input class="sheet-inputbox-disabled" type="number" name="attr_CON_mod" title="current Constitution modifier" style="height: 24px; width: 40px;" value="floor(@{CON}/2-5)" disabled="true"/></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-statlabel" style="background-color: #000000; color: #FFF; text-align: center;">INT</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="10" name="attr_INT_base" title="base Intelligence" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_INT_enhance" title="enhancement bonus to Intelligence" style="height: 24px; width: 40px;" /> -</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_INT_damage" title="ability damage to Intelligence" style="height: 24px; width: 40px; color: #CC3300;" /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" value="10" name="attr_INT" title="current Intelligence "style="height: 24px; width: 40px;" /></td>
+                        <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" title="current Intelligence modifier" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-statlabel" style="background-color: #000000; color: #FFF; text-align: center;">WIS</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="10" name="attr_WIS_base" title="base Wisdom" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_WIS_enhance" title="enhancement bonus to Wisdom" style="height: 24px; width: 40px;" /> -</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_WIS_damage" title="ability damage to Wisdom" style="height: 24px; width: 40px; color: #CC3300;" /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" value="10" name="attr_WIS" title="current Wisdom "style="height: 24px; width: 40px;" /></td>
+                        <td><input class="sheet-inputbox-disabled" type="number" name="attr_WIS_mod" title="current Wisdom modifier" style="height: 24px; width: 40px;;" value="floor(@{WIS}/2-5)" disabled="true"/></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-statlabel" style="background-color: #000000; color: #FFF; text-align: center;">CHA</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="10" name="attr_CHA_base" title="base Charisma" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_CHA_enhance" title="enhancement bonus to Charisma" style="height: 24px; width: 40px;" /> -</td>
+                        <td><input class="sheet-inputbox" type="number" name="attr_CHA_damage" title="ability damage to Charisma" style="height: 24px; width: 40px; color: #CC3300;" /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" value="10" name="attr_CHA" title="current Charisma"style="height: 24px; width: 40px;" /></td>
+                        <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" title="current Charisma modifier" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/></td>
+                    </tr>
+                </table>
+            </div>
+            <div class='sheet-col' style="width: 500px;">
+                <!-- Second 'column' of second 'row': EXPERIENCE, SAVING THROWS, INITIATIVE, and BASE ATTACK -->
+                <table> <!-- EXPERIENCE -->
+                    <tr style="font-size: 1.2em;"> <!-- Experience -->
+                        <td class="sheet-levellabel" style="background-color: #000000; font-size: 1.2em; color: #FFF; text-align: center; float: none; height: 28px; width: 60px; display: block;">Level:</td>
+                        <td>&nbsp;<input class="sheet-inputbox-primary" type="number" name="attr_Level" title="Character Level (total of all class levels)" style="font-size: 1.2em; height: 32px; width: 48px;" /></td>
+                        <td style="width: 5px;">&nbsp;</td>
+                        <td class="sheet-experiencelabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; height: 24px; width: 90px; display: block;">Experience:</td>
+                        <td>&nbsp;<input class="sheet-inputbox-primary" type="number" name="attr_Experience" title="Experience Points" style="height: 24px; width: 77px;" /></td>
+                        <td style="width: 5px;">&nbsp;</td>
+                        <td class="sheet-nextlevellabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; height: 24px; width: 85px; display: block;">Next Level:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" name="attr_Experience_max" title="Experience needed for next level" style="height: 24px; width: 77px;" /></td>
+                    <tr>
+                </table>
+                <br>
+                <table>
+                    <tr>     <!--INITIATIVE -->
+                        <th style="style=font-size: 0.8em; background-color: #000000; color: #FFF;">&nbsp;</th><th style="background-color: #000000; color: #FFF;">Ability:</th><th style="background-color: #000000; color: #FFF;">Feat:</th><th style="background-color: #000000; color: #FFF;">Enhance:</th><th style="background-color: #000000; color: #FFF;">Total:</th>
+                        <th width=20>&nbsp;</th><th class="sheet-speedlabel" style="background-color: #000000; color: #FFF; float: none; height: 24px; width: 90px;">Base Speed:</th>
+                    </tr>
+                    <tr>
+                        <td class="sheet-initlabel" style="background-color: #000000; color: #FFF; font-size: 1.2em; text-align: center; float: none; height: 24px; width: 120px; display: block;">Initiative</td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" type="number" value="floor(@{DEX}/2-5)" name="attr_init_mod" title="Dexterity bonus to Initiative" style="height: 24px; width: 40px;" disabled="true" /> + </td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_init_feat" title="Initiative bonus due to Feats" style="height: 24px; width: 40px;" /> + </td>   
+                        <td>&nbsp; &nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_init_enhance" title="Enhancement bonus to Initiative" style="height: 24px; width: 40px;" /> = </td>   
+                        <td><input class="sheet-inputbox-primary" type="number" value="0" name="attr_Initiative" title="total Initiative modifier" style="height: 24px; width: 40px;" /></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp; &nbsp;<input class="sheet-inputbox" type="number" value="30" name="attr_Speed" title="base movement in feet per round" style="height: 24px; width: 40px;" /> feet</td>
+                    </tr>
+                </table>
+                <br>
+                <table> <!-- SAVING THROWS -->
+                    <tr style="font-size: 0.8em; background-color: #000000; color: #FFF;">
+                        <th>&nbsp;</th> <th>Base:</th> <th>Ability:</th> <th>Resist:</th> <th>Luck:</th> <th>Feats:</th> <th>Misc:</th> <th style="font-size: 1.4em;">Total:</th> <th style="width: 20px;">&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <td><button type='roll' value='/roll 1d20 + @{Fortitude} for @{Char_Name} - (Fortitude saving throw)' name='roll_Fortitude' title="Roll a Fortitude saving throw to stand up to physical punishment or attacks against your vitality and health.">Fortitude</button></td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_fort_base" title="base Fortitude save" style="height: 24px; width: 40px;"  /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="floor(@{CON}/2-5)" name="attr_fort_mod" title="Constitution modifier" style="height: 24px; width:40px; background-color: #A3A3A3;" disabled="true" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_fort_resist" title="resistance bonus to Fortitude" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_fort_luck" title="luck bonus to Fortitude" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_fort_feat" title="Fortitude modifiers from Feats" style="height: 24px; width: 40px;"  /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_fort_misc" title="other Fortitude modifiers" style="height: 24px; width: 40px;"  /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" name="attr_Fortitude" title="total Fortitude save modifier" style="height: 24px; width: 40px;" /></td>
+                    </tr>
+                    <tr>
+                        <td><button type='roll' value='/roll 1d20 + @{Reflex} for @{Char_Name} - (Reflex saving throw)' name='roll_Reflex' title="Roll a Reflex saving throw to dodge area attacks and evade unexpected situations.">&nbsp; Reflex &nbsp;</button></td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_ref_base" title="base Reflex save" style="height: 24px; width: 40px;"  /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="floor(@{DEX}/2-5)" name="attr_ref_mod"  title="Dexterity modifier" style="height: 24px; width: 40px; background-color: #A3A3A3;" disabled="true" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_ref_resist" title="resistance bonus to Reflex" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_ref_luck" title="luck bonus to Reflex" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_ref_feat" title="Reflex modifiers from Feats" style="height: 24px; width: 40px;"  /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_ref_misc" title="other Reflex modifiers" style="height: 24px; width: 40px;"  /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" name="attr_Reflex" title="total Reflex save modifier" style="height: 24px; width: 40px;" /></td>
+                    </tr>
+                    <tr>
+                        <td><button type='roll' value='/roll 1d20 + @{Will} for @{Char_Name} - (Will saving throw)' name='roll_Will' title="Roll a Will saving throw to resist enchantments, fear, and other mind-affecting abilities.">&nbsp; Will &nbsp; &nbsp; &nbsp;</button></td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_will_base" title="base Will save" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="floor(@{WIS}/2-5)" name="attr_will_mod" title="Wisdom modifier" style="height: 24px; width:40px; background-color: #A3A3A3;" disabled="true" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_will_resist" title="resistance bonus to Will" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_will_luck" title="luck bonus to Will" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_will_feat" title="Will modifiers from Feats" style="height: 24px; width: 40px;" /> +</td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_will_misc" title="other Will modifiers" style="height: 24px; width: 40px;" /> =</td>
+                        <td><input class="sheet-inputbox-primary" type="number" name="attr_Will" title="total Will save modifier"style="height: 24px; width: 40px;" /></td>
+                    </tr>
+                </table>
+                <br>
+                <table> <!-- BASE ATTACK -->
+                    <tr style="font-size: 1.2em;"> 
+                        <td class="sheet-BABlabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; width: 80px; display: block;">Base Attack:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_Base_Attack" title="Base Attack bonus (based on class and level)" style="font-size: 1.2em; width: 50px;" />&nbsp;</td>
+                        <td style="width: 20px;">&nbsp;</td>
+                        <td class="sheet-meleelabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; width: 80px; display: block;">Melee Attack:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_Melee_Attack" title="Melee Attack bonus (Base Attack + STR modifier)" style="font-size: 1.2em; width: 50px;" />&nbsp;</td>
+                        <td style="width: 20px;">&nbsp;</td>
+                        <td class="sheet-rangedlabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; width: 80px; display: block;">Ranged Attack:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_Ranged_Attack" title="Ranged Attack bonus (Base Attack + DEX modifier)" style="font-size: 1.2em; width: 50px;" /></td>
+                    </tr>
+                </table>
+                <table style="margin-top: 5px;"> <!-- COMBAT MANEUVERABILITY BONUS and DEFENSE -->
+                    <tr style="font-size: 1.2em; text-align: center; vertical-align: top;">
+                        <td><button type='roll' value='/roll 1d20 + @{CMB} for @{Char_Name} - (Combat maneuverability)' name='roll_CMB' title="Roll a Combat Maneuverability check to attempt to grapple, bull rush, disarm, or trip your opponent in melee." style=" height: 34px;">&nbsp;CMB&nbsp;</button></td>
+                        <td><input class="sheet-inputbox" type="number" value="0" name="attr_CMB" title="this character's Combat Maneuverability Bonus" style="font-size: 1.2em; width: 50px;" />&nbsp;</td>
+                        <td style="width: 10px;"></td>
+                        <td class="sheet-CMDlabel" style="background-color: #000000; color: #FFF; text-align: center; vertical-align: middle; float: none; width: 90px; display: block;">Combat Defense:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_CMD" title="this character's Combat Maneuverability Defense" style="font-size: 1.2em; width: 50px;" />&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="sheet-SRlabel" style="background-color: #000000; color: #FFF; text-align: center; vertical-align: middle; float: none; width: 90px; display: block;">Spell Resistance:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_Spell_Resistance" title="this character's Spell Resistance against all magical effects" style="font-size: 1.2em; width: 50px;" />&nbsp;</td>
+                    </tr>
+                </table>
+                <table style="margin-top: 5px;"> <!-- TOUCH, FLAT-FOOTED, and ARMOR CHECK PENALTY -->
+                    <tr style="font-size: 1.2em; text-align: center; vertical-align: top;"> 
+                        <td class="sheet-TouchAClabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; width: 80px; display: block;">Touch &nbsp; &nbsp; AC:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_touch" title="AC vs. touch attacks (no armor or shield)" style="font-size: 1.2em; width: 50px;"/>&nbsp;</td>
+                        <td style="width: 20px;">&nbsp;</td>
+                        <td class="sheet-FlatAClabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; width: 80px; display: block;">Flat-footed AC:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_flat" title="AC when flat-footed (no Dex or Dodge)" style="width: 50px; font-size: 1.2em;"/>&nbsp;</td>
+                        <td style="width: 20px;">&nbsp;</td>
+                        <td class="sheet-CheckPenaltylabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; width: 80px; display: block;">Check penalty:</td>
+                        <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_Armor_Check_Penalty" title="penalty to certain DEX skills, caused by your armor" style="width: 50px; font-size: 1.2em;"/>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+<div class="sheet-character-sheet sheet-stats" style="clear: both;"> <!-- Third "block": ARMOR CLASS -->
+    <div class='sheet-col' style="margin-right: 5px; padding-right: 5px;"> 
+        <table style="text-align: center;">
+            <tr style="font-size: 0.8em; text-align: center; background-color: #000000; color: #FFF;">
+                <th>&nbsp;</th> <th>&nbsp;</th> <th>Armor:</th> <th>Shield:</th> <th>Dex:</th> <th>Size:</th> <th>Dodge:</th> <th>Natural:</th> <th>Enhance:</th> <th>Deflect:</th>
+                    <th>Sacred:</th> <th>Luck:</th> <th>Misc:</th> <th>&nbsp;</th> <th style="font-size: 1.4em;">Total:</th> <th style="width: 30px;">&nbsp;</th>
+            </tr>
+            <tr>
+                <td class="sheet-aclabel" style="background-color: #000000; color: #FFF; text-align: center; float: none; height: 24px; width: 40px; display: block; font-size: 1.2em;"><b>AC</b></td>
+                <td> &nbsp; <b>10</b>  +</td>
+                <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_armor" title="armor bonus to AC" style="height: 24px; width: 40px;" />  + </td>
+                <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_shield" title="shield bonus to AC" style="height: 24px; width: 40px;" /> + </td>
+                <td><input class="sheet-inputbox" type="number" value="floor(@{DEX}/2-5)" name="attr_AC_dex" title="Dexterity bonus to AC" style="height: 24px; width: 40px; background-color: #A3A3A3;" disabled="true" /> + </td>
+                <td><input class="sheet-inputbox" type="number" value="0" name="attr_AC_size" title="size bonus to AC" style="height: 24px; width: 40px;"  /> + </td>
+                <td><input class="sheet-inputbox" type="number" value="0" name="attr_AC_dodge" title="dodge bonus to AC" style="height: 24px; width: 40px;"  /> + </td>
+                <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_natural" title="natural armor bonus to AC" style="height: 24px; width: 40px;"  /> + </td>
+                <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_enhance" title="enhancement bonus to AC" style="height: 24px; width: 40px;"  /> + </td>
+                <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_deflect" title="deflection bonus to AC" style="height: 24px; width: 40px;"  /> + </td>
+                <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_sacred" title="sacred (or profane) bonus to AC" style="height: 24px; width: 40px;"  /> + </td>
+                <td>&nbsp;<input class="sheet-inputbox" type="number" value="0" name="attr_AC_luck" title="luck bonus to AC" style="height: 24px; width: 40px;"  /> + </td>
+                <td><input class="sheet-inputbox" type="number" value="0" name="attr_AC_misc" title="other bonuses to AC" style="height: 24px; width: 40px;"  /></td>
+                <td style="font-size: 1.4em; width: 40px;"> = </td>
+                <td><input class="sheet-inputbox-primary" type="number" value="10" name="attr_AC" title="total Armor Class with all modifiers" style="width: 50px; font-size: 1.4em;" /></td>
+            </tr>
+        </table>
+    </div> <!-- end of 'sheet-col' -->
+</div> <!-- ARMOR CLASS -->
+<br>
+<div class="sheet-character-sheet sheet-class"> <!-- Fourth "block": CHARACTER CLASS and assosciated info -->
+    <h3 style="text-align: center; background-color: #000000; color: #FFF;">Character Classes</h3>
+    <br>
+    <table>
+        <tr style="background-color: #000000; color: #FFF; text-align: center;">
+            <th width=95>Class</th><th width=50>Level</th><th width=60>Hit Dice</th><th width=45>BAB</th><th width=55>Fort</th><th width=60>Reflex</th><th width=45>Will</th><th width=375>Special Abilities</th>
+        </tr>
+    </table>
+    <fieldset class="repeating_class">
+        <table>
+            <tr>
+                <td><select name="attr_Class" class="sheet-inputbox-primary" title="select the name of your Class" style="width: 90px;">
+                    <option selected> </option>
+                    <option>Barbarian</option>
+                    <option>Bard</option>
+                    <option>Druid</option>
+                    <option>Fighter</option>
+                    <option>Monk</option>
+                    <option>Paladin</option>
+                    <option>Priest</option>
+                    <option>Ranger</option>
+                    <option>Rogue</option>
+                    <option>Sorcerer</option>
+                    <option>Wizard</option>
+                </select>&nbsp;</td>
+                <td><input name="attr_ClassLevel" class="sheet-inputbox-primary" title="the number of levels you have in THIS class" type="number" value="1" style="width: 50px; height: 24px;"/>&nbsp;</td>
+                <td><input name="attr_ClassHD" class="sheet-inputbox-disabled" title="the die rolled for Hit Points at each level" type="text" style="width: 50px; height: 24px;"/>&nbsp;</td>
+                <td><input name="attr_ClassBAB" class="sheet-inputbox" title="base attack bonus for this class at this level" type="number" style="width: 50px; height: 24px;"/>&nbsp;</td>
+                <td><input name="attr_ClassFort" class="sheet-inputbox" title="Fortitude save bonus for this class at this level" type="number" style="width: 50px; height: 24px;"/>&nbsp;</td>
+                <td><input name="attr_ClassReflex" class="sheet-inputbox" title="Reflex save bonus for this class at this level" type="number" style="width: 50px; height: 24px;"/>&nbsp;</td>
+                <td><input name="attr_ClassWill" class="sheet-inputbox" title="Will save bonus for this class at this level" type="number" style="width: 50px; height: 24px;"/>&nbsp;</td>
+                <td><input name="attr_ClassSpec" class="sheet-inputbox" title="Class-based abilies" type="text" style="width: 370px; height: 24px;"/>&nbsp;</td>
+            </tr>
+        </table>
+        <div class="sheet-character-sheet sheet-class-spells"> <!-- Want to make this disappear if not needed -->
+            <table>
+                <tr>
+                    <td><b>Spells cast based on:</b></td>
+                    <td><input class="sheet-inputbox" type="text" name="attr_ClassPR" title="the ability score upon which this class's spells are based" style="height: 24px; width: 80px;" />
+                    <td><b>Spells per level, per day:</b></td>
+                    <td> 1:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_1_Cast" title="1st-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                    <td> 2:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_2_Cast" title="2nd-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                    <td> 3:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_3_Cast" title="3rd-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                    <td> 4:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_4_Cast" title="4th-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                    <td> 5:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_5_Cast" title="5th-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                    <td> 6:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_6_Cast" title="6th-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                    <td> 7:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_7_Cast" title="7th-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                    <td> 8:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_8_Cast" title="8th-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                    <td> 9:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_9_Cast" title="9th-level spells, per day" style="height: 24px; width: 35px;" /></td>
+                </tr>
+            </table>
+            <div class="sheet-character-sheet sheet-class-spells-known"> <!-- Want to make this disappear if not needed -->
+                <table>
+                    <tr>
+                        <td width=166px><input type="checkbox" class="sheet-inputbox" name="attr_ClassFavored" title="Check if this class is the character's favored class.">&nbsp;<b>Favored?</b></td>
+                        <td><b>Spells known, per level:</b>&nbsp;&nbsp;</td>
+                        <td> 0:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_0_Known" title="0- level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 1:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_1_Known" title="1st-level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 2:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_2_Known" title="2nd-level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 3:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_3_Known" title="3rd-level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 4:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_4_Known" title="4th-level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 5:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_5_Known" title="5th-level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 6:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_6_Known" title="6th-level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 7:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_7_Known" title="7th-level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 8:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_8_Known" title="8th-level spells known" style="height: 24px; width: 35px;" /></td>
+                        <td> 9:<input class="sheet-inputbox" type="number" value="0" name="attr_Class_Spell_9_Known" title="9th-level spells known" style="height: 24px; width: 35px;" /></td>
+                    </tr>
+                </table>
+            </div> <!-- sheet-class-spells-known -->
+        </div> <!-- sheet-class-spells -->
+    </fieldset>
+</div> <!-- sheet-class -->
+
+<div class="sheet-character-sheet sheet-feats"> <!-- Fifth "block": FEATS, SPECIAL ABILITIES, and SKILLS -->
+    <div class='sheet-2colrow'>
+        <div class='sheet-col' style="width: 320px; margin-right: 0px; padding-right: 0px;"> <!-- FEATS * SPECIAL ABILITIES on the left side -->
+        <br>
+            <h3 style="text-align: center; background-color: #000000; color: #FFF;">Feats</h3>
+            <br>
+            <fieldset class="repeating_feats" style="width: 300px">
+                <span style="text-align: left;"><b>Feat:</b></span>
+                <input class="sheet-inputbox-primary" title="name of a Feat" style="width: 170px" type="text" name="attr_Feat"/>
+                <select name="attr_FeatType" class="sheet-inputbox" title="what type of Feat this is" style="font-size: 0.9em; width: 100px;">
+                    <option selected>General</option>
+                    <option>Combat</option>
+                    <option>Magic</option>
+                    <option>Metamagic</option>
+                    <option>Regional</option>
+                    <option>Bonus (class)</option>
+                    <option>Bonus (racial)</option>
+                    <option>Bonus (item)</option>
+                </select>
+                <br>
+                <textarea class="sheet-inputbox" name="attr_FeatDesc" style="width: 300px; height: auto;"> </textarea>
+            </fieldset>
+            <h3 style="text-align: center; background-color: #000000; color: #FFF;">Special Abilities</h3>
+            <br>
+            <fieldset class="repeating_specability" style="width: 300px">
+                <span style="text-align: left;"><b>Ability:</b></span>
+                <input class="sheet-inputbox-primary" title="name of a Special Ability" style="width: 170px" type="text" name="attr_SpecAbility"/>
+                <select name="attr_SpecAbilityType" class="sheet-inputbox" title="From where does your character get this Ability?</select>" style="font-size: 0.9em; width: 85px;">
+                    <option selected>Racial</option>
+                    <option>Class</option>
+                    <option>Domain</option>
+                    <option>Item</option>
+                    <option>Inherent</option>
+                    <option>other</option>
+                </select>
+                <br>
+                <textarea class="sheet-inputbox" name="attr_SpecAbilityDesc" style="width: 300px; height: auto;"> </textarea>
+            </fieldset>
+        </div> <!-- end of the first column (FEATS & SPECIAL ABILITIES) -->
+        <div class='sheet-col' style="width: 490px;"> <!-- SKILLS on the right side -->
+            <br>
+            <h3 style="text-align: center; background-color: #000000; color: #FFF; margin-bottom: 0px; padding-bottom: 0px;">Skills</h3><br>  
+            <h4 style="text-align: center; padding: 0px; margin: 0px;">+3 bonus to skill checks for all <input type="checkbox" checked disabled> Class Skills with at least 1 rank</h4><br>
+            <table align="center">
+                <tr>
+                    <th style="width: 80;">Skill Name</th> <th style="width: 20px;">Total<br>Bonus</th><th></th><th style="width: 60px; text-align: left;">Ability<br>Mod</th><th style="width: 60px; text-align: left;">Ranks</th><th style="width: 60px; text-align: left;">Misc<br>Mod</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Acrobatics_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Acrobatics} for @{Char_Name} - (Acrobatics skill check)' name='roll_Skill_Acrobatics'
+                        title="The Acrobatics skill supercedes the 3rd edition skills Balance, Jump, and Tumble.">Acrobatics</button><b><span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Acrobatics" style="width: 40px;"></td>
+                    <td>= DEX</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_DEX_mod" style="height: 24px; width: 40px;" value="floor(@{DEX}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Acrobatics_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Acrobatics_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Appraise_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Appraise} for @{Char_Name} - (Appraise skill check)' name='roll_Skill_Appraise'
+                        title="Use the Appraise skill to try to determine the monetary value of an object.">Appraise</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Appraise" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Appraise_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Appraise_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Bluff_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Bluff} for @{Char_Name} - (Bluff skill check)' name='roll_Skill_Bluff'
+                        title="Use the Bluff skill to attempt to lie to another character, and convince them the lie is true. Opposed by Sense Motive.">Bluff</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Bluff" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Bluff_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Bluff_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Climb_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Climb} for @{Char_Name} - (Climb skill check)' name='roll_Skill_Climb'
+                        title="Use the Climb skill to advance up, down, or across any slope, wall, or other steep surface.">Climb</button><b><span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Climb" style="width: 40px;"></td>
+                    <td>= STR</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_STR_mod" style="height: 24px; width: 40px;" value="floor(@{STR}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Climb_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Climb_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Craft1_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Craft1} for @{Char_Name} - (Craft (@{Skill_Craft1_type}) skill check)' name='roll_Skill_Craft1'
+                        title="A Craft skill is one which allows you to create a specific category of useful items. Can be used to generate a weekly cash income. Requires artisan's tools.">Craft</button>
+                    <input class="sheet-inputbox" name="attr_Skill_Craft1_type" type="text" style="width: 120px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Craft1" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Craft1_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Craft1_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Craft2_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Craft2} for @{Char_Name} - (Craft (@{Skill_Craft2_type}) skill check)' name='roll_Skill_Craft2'
+                        title="A Craft skill is one which allows you to create a specific category of useful items. Can be used to generate a weekly cash income. Requires artisan's tools.">Craft</button>
+                    <input class="sheet-inputbox" name="attr_Skill_Craft2_type" type="text" style="width: 120px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Craft2" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Craft2_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Craft2_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Craft3_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Craft3} for @{Char_Name} - (Craft (@{Skill_Craft3_type}) skill check)' name='roll_Skill_Craft3'
+                        title="A Craft skill is one which allows you to create a specific category of useful items. Can be used to generate a weekly cash income. Requires artisan's tools.">Craft</button>
+                    <input class="sheet-inputbox" name="attr_Skill_Craft3_type" type="text" style="width: 120px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Craft3" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Craft3_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Craft3_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Diplomacy_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Diplomacy} for @{Char_Name} - (Diplomacy skill check)' name='roll_Skill_Diplomacy'
+                        title="Use the Diplomacy skill to 'reason with' or (non-violent) persuade another character. The DC is determined by the creature's current Attitude.">Diplomacy</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Diplomacy" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Diplomacy_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Diplomacy_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_DisableDevice_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_DisableDevice} for @{Char_Name} - (Disable Device skill check)' name='roll_Skill_DisableDevice'
+                        title="The Disable Device skill is used to disarm traps, sabotage mechanical devices, or pick open locks. It now includes the functions of the 3rd edition skill Open Locks. Requires Thieves' Tools.">
+                        Disable Device</button><b>&#8224;&nbsp;<span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_DisableDevice" style="width: 40px;"></td>
+                    <td>= DEX</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_DEX_mod" style="height: 24px; width: 40px;" value="floor(@{DEX}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_DisableDevice_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_DisableDevice_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Disguise_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Disguise} for @{Char_Name} - (Disguise skill check)' name='roll_Skill_Disguise'
+                        title="Allows you to disguise yourself as a different individual. DC increases if mimicing a different race or gender. Opposed by Perception.">Disguise</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Disguise" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Disguise_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Disguise_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_EscapeArtist_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_EscapeArtist} for @{Char_Name} - (Escape Artist skill check)' name='roll_Skill_EscapeArtist'
+                        title="This skill is used to slip free from bonds or manacles, or to escape from 'grapples' in combat.">Escape Artist</button><b><span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_EscapeArtist" style="width: 40px;"></td>
+                    <td>= DEX</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_DEX_mod" style="height: 24px; width: 40px;" value="floor(@{DEX}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_EscapeArtist_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_EscapeArtist_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Fly_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Fly} for @{Char_Name} - (Fly skill check)' name='roll_Skill_Fly'
+                        title="This skill governs your ability to maneuver while airborne. IT DOES NOT ALLOW YOU TO FLY, if you don't already have the ability to so do. (Example: creatures that have wings, or subjects of the 'Fly' spell, would use this skill.)">
+                        Fly</button><b><span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Fly" style="width: 40px;"></td>
+                    <td>= DEX</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_DEX_mod" style="height: 24px; width: 40px;" value="floor(@{DEX}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Fly_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Fly_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_HandleAnimal_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_HandleAnimal} for @{Char_Name} - (Handle Animal skill check)' name='roll_Skill_HandleAnimal'
+                        title="This skill allows you to train domestic animals and teach them commands, over time. It can also be used to rear wild animals as tame. Note that the former 3rd edition skill, Animal Empathy, has been replaced in Pathfinder by the Wild Empathy special ability of druids and rangers, which functions as if it were a Diplomacy skill.">
+                        Handle Animal</button><b>&#8224;</b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_HandleAnimal" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_HandleAnimal_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_HandleAnimal_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Heal_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Heal} for @{Char_Name} - (Heal skill check)' name='roll_Skill_Heal'
+                        title="Used to stabilize a dying character, provide long-term care for faster wound healing, counter the effects of poison and disease, and to 'Treat Deadly Wounds' (see page 99?)">Heal</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Heal" style="width: 40px;"></td>
+                    <td>= WIS</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_WIS_mod" style="height: 24px; width: 40px;" value="floor(@{WIS}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Heal_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Heal_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Intimidate_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Intimidate} for @{Char_Name} - (Intimidate skill check)' name='roll_Skill_Intimidate'
+                        title="Use verbal threats and displays of power to frighten opponents into acting Friendly towards you for (1d6)x10 minutes. After this expires, Attitude becomes Unfriendly.">Intimidate</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Intimidate" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Intimidate_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Intimidate_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Know1_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Know1} for @{Char_Name} - (Knowledge (@{Skill_Know1_type}) skill check)' name='roll_Skill_Know1'
+                        title="You are educated in a field of study and can answer both simple and complex questions about this topic.">Know.</button><b>&#8224;</b>
+                    <input class="sheet-inputbox" name="attr_Skill_Know1_type" type="text" style="width: 105px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Know1" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Know1_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Know1_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Know2_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Know2} for @{Char_Name} - (Knowledge (@{Skill_Know2_type}) skill check)' name='roll_Skill_Know2'
+                        title="You are educated in a field of study and can answer both simple and complex questions about this topic.">Know.</button><b>&#8224;</b>
+                    <input class="sheet-inputbox" name="attr_Skill_Know2_type" type="text" style="width: 105px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Know2" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Know2_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Know2_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Know3_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Know3} for @{Char_Name} - (Knowledge (@{Skill_Know3_type}) skill check)' name='roll_Skill_Know3'
+                        title="You are educated in a field of study and can answer both simple and complex questions about this topic.">Know.</button><b>&#8224;</b>
+                    <input class="sheet-inputbox" name="attr_Skill_Know3_type" type="text" style="width: 105px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Know3" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Know3_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Know3_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Linguistics_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Linguistics} for @{Char_Name} - (Linguistics skill check)' name='roll_Skill_Linguistics'
+                        title="You are skilled at working with spoken and written languages. Learn 1 language every time you gain a rank. Make skills checks to dechipher unknown text, or to create or detect forgeries.">Linguistics</button><b>&#8224;</b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Linguistics" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Linguistics_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Linguistics_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Perception_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Perception} for @{Char_Name} - (Perception skill check)' name='roll_Skill_Perception'
+                        title="The ability to notice fine details in the environment. This skill supercedes the 3rd edition skills Listen, Spot, and Search, which are now combined. Usually rolled in opposition to Stealth, Disguise, or Sleight of Hand checks.">Perception</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Perception" style="width: 40px;"></td>
+                    <td>= WIS</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_WIS_mod" style="height: 24px; width: 40px;" value="floor(@{WIS}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Perception_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Perception_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Perform1_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Perform1} for @{Char_Name} - (Perform (@{Skill_Perform1_type}) skill check)' name='roll_Skill_Perform1'
+                        title="Skill in one type of musical instrument or dramatic performance.">Perform</button>
+                    <input class="sheet-inputbox" name="attr_Skill_Perform1_type" type="text" style="width: 98px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Perform1" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Perform1_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Perform1_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Perform2_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Perform2} for @{Char_Name} - (Perform (@{Skill_Perform2_type}) skill check)' name='roll_Skill_Perform2'
+                        title="Skill in one type of musical instrument or dramatic performance.">Perform</button>
+                    <input class="sheet-inputbox" name="attr_Skill_Perform2_type" type="text" style="width: 98px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Perform2" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Perform2_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Perform2_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Profession1_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Profession1} for @{Char_Name} - (Profession (@{Skill_Profession1_type} skill check)' name='roll_Skill_Profession1'
+                        title="You are trained in a vocation that involves a broad range of less specific knowledge, such as 'Herbalism', 'Mining', or 'Skinning'.">Profess.</button><b>&#8224;</b>
+                    <input class="sheet-inputbox" name="attr_Skill_Profession1_type" type="text" style="width: 90px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Profession1" style="width: 40px;"></td>
+                    <td>= WIS</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_WIS_mod" style="height: 24px; width: 40px;" value="floor(@{WIS}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Profession1_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Profession1_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Profession2_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Profession2} for @{Char_Name}  - (Profession (@{Skill_Profession2_type}) skill check)' name='roll_Skill_Profession2'
+                        title="You are trained in a vocation that involves a broad range of less specific knowledge, such as 'Herbalism', 'Mining', or 'Skinning'.">Profess.</button><b>&#8224;</b>
+                    <input class="sheet-inputbox" name="attr_Skill_Profession2_type" type="text" style="width: 90px"></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Profession2" style="width: 40px;"></td>
+                    <td>= WIS</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_WIS_mod" style="height: 24px; width: 40px;" value="floor(@{WIS}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Profession2_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Profession2_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Ride_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Ride} for @{Char_Name} - (Ride skill check)' name='roll_Skill_Ride'
+                        title="This skill is used to control a fractious mount, to remain mounted while in combat, or to perform 'Special Maneuvers'.">Ride</button><b><span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Ride" style="width: 40px;"></td>
+                    <td>= DEX</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_DEX_mod" style="height: 24px; width: 40px;" value="floor(@{DEX}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Ride_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Ride_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Seduction_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Seduction} for @{Char_Name} - (Seduction skill check)' name='roll_Skill_Seduction'
+                        title="This skill is used to positively influence the Attitude of NPCs by manipulating their sexuality. Opposed by Sense Motive. Generally only useable on other humanoids. Race, gender, and sexual orientation play a big Role.">Seduction</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Seduction" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Seduction_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Seduction_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_SenseMotive_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_SenseMotive} for @{Char_Name} - (Sense Motive skill check)' name='roll_Skill_SenseMotive'
+                        title="This skill opposes Bluff and Seduction checks, and allows for 'hunches' and sensing whether an individual is under an Enchantment effect.">Sense Motive</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_SenseMotive" style="width: 40px;"></td>
+                    <td>= WIS</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_WIS_mod" style="height: 24px; width: 40px;" value="floor(@{WIS}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_SenseMotive_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_SenseMotive_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_SlightOfHand_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_SlightOfHand} for @{Char_Name} - (Slight Of Hand skill check)' name='roll_Skill_SlightOfHand'
+                        title="Your training allows you to 'palm' small objects, pick pockets, draw hidden weapons, and take a variety of actions without being noticed. Opposed by Perception.">Slight Of Hand</button><b>&#8224;&nbsp;<span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_SlightOfHand" style="width: 40px;"></td>
+                    <td>= DEX</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_DEX_mod" style="height: 24px; width: 40px;" value="floor(@{DEX}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_SlightOfHand_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_SlightOfHand_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Spellcraft_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Spellcraft} for @{Char_Name} - (Spellcraft skill check)' name='roll_Skill_Spellcraft'
+                        title="You are skilled at the art of casting spells, identifying magic items, interpreting magic writings, and identifying spells as they are being cast.">Spellcraft</button><b>&#8224;</b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Spellcraft" style="width: 40px;"></td>
+                    <td>= INT</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_INT_mod" style="height: 24px; width: 40px;" value="floor(@{INT}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Spellcraft_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Spellcraft_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Stealth_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Stealth} for @{Char_Name} - (Stealth skill check)' name='roll_Skill_Stealth'
+                        title="You are skilled at avoiding detection, allowing you to slip past foes or strike from an unseen position. This skill combines the 3rd edition Hide and Move Silently skills.">Stealth</button><b><span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Stealth" style="width: 40px;"></td>
+                    <td>= DEX</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_DEX_mod" style="height: 24px; width: 40px;" value="floor(@{DEX}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Stealth_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Stealth_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Survival_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Survival} for @{Char_Name} - (Survival skill check)' name='roll_Skill_Survival'
+                        title="You are skilled at surviving in the wild and at navigating in the wilderness. You also excel at following trails and tracks left by others. Combines the 3rd edition skills Wilderness Lore and Intuit Direction.">Survival</button></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Survival" style="width: 40px;"></td>
+                    <td>= WIS</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_WIS_mod" style="height: 24px; width: 40px;" value="floor(@{WIS}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Survival_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Survival_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_Swim_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{Skill_Swim} for @{Char_Name} - (Swim skill check)' name='roll_Skill_Swim'
+                        title="You know how to swim and can do so even in stormy water.">Swim</button><b><span style="font-size: 1.4em;">®</span></b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_Swim" style="width: 40px;"></td>
+                    <td>= STR</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_STR_mod" style="height: 24px; width: 40px;" value="floor(@{STR}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Swim_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_Swim_mods" value="0" style="width: 40px;"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Skill_UseMagicDevice_class" value="3">
+                    <button type='roll' value='/roll 1d20 + @{UseMagicDevice} for @{Char_Name} - (Use Magic Device skill check)' name='roll_Skill_UseMagicDevice'
+                        title="You can use this skill to read a spell or to activate a magic item. Use Magic Device lets you use a magic item as if you had the spell ability or class features of another class, as if you were a different race, or as if you were of a different alignment.">Use Magic Device</button><b>&#8224;</b></td>
+                    <td><input class="sheet-inputbox-primary" type="number" name="attr_Skill_UseMagicDevice" style="width: 40px;"></td>
+                    <td>= CHA</td>
+                    <td><input class="sheet-inputbox-disabled" type="number" name="attr_CHA_mod" style="height: 24px; width: 40px;" value="floor(@{CHA}/2-5)" disabled="true"/>&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_UseMagicDevice_ranks" value="0" style="width: 40px;">&nbsp;+</td>
+                    <td><input class="sheet-inputbox" type="number" name="attr_Skill_UseMagicDevice_mods" value="0" style="width: 40px;"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="width: 12px;"></td>
+                    <td style="width: 150px;"><input type="checkbox" checked disabled>&nbsp;<b>Class skill</b></td>
+                    <td style="width: 300px; text-align: right;"><b>Unassigned Skill Points:</b>&nbsp;<input type="number" class="sheet-inputbox" name="attr_SkillPointsLeft" title="You have this many skill points still left to distribute." style="height:24px; width: 40px;"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&nbsp;<b>&#8224; = Trained Only</b></td>
+                    <td style="text-align: right;"><b><span style="font-size: 1.4em;">®</span> Armor Check Penalty:</b>&nbsp;<input class="sheet-inputbox-disabled" type="number" value="0" name="attr_Armor_Check_Penalty" title="penalty to certain DEX skills, caused by your armor" style="height: 24px; width: 50px;"/></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+</div> <!-- FEATS and SKILLS -->
+
+<div class='sheet-2colrow' > <!-- Sixth "block": WEAPONS, ARMOR and INVENTORY -->
+    <div class='sheet-col' style="width: 500px; margin-right: 5px; padding-right: 0px;"> <!-- First column: WEAPONS and ARMOR -->
+        <h3 style="text-align: center; background-color: #000000; color: #FFF; margin-bottom: 10px;">Weapons equipped</h3>
+        <table>
+            <tr style="text-align: center; font-weight: bold;">
+                <td></td> <td>Attack</td> <td></td> <td>Magic</td> <td>Threat</td> <td>Crit</td>
+            </tr>
+            <tr style="text-align: center; font-weight:bold;">
+                <th><h4 style="text-align: left">Main hand:</h4></th>
+                <td>bonus:</td> <td>Damage:</td> <td>Ench:</td> <td>range:</td> <td>multi:</td> <td>Ability:</td> <td>2H?</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Weapon_Main_name" title="the name of this weapon" style="width: 125px;">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Main_hitBonus" title="The sum of all modifiers, including masterwork weapons and Weapon Focus Feats, that apply to the attack roll ONLY." value="0">&nbsp;</td>
+                <td><input style="width: 70px" type="text" class="sheet-inputbox" name="attr_Weapon_Main_damage" title="A string expression of dice that are to be rolled for damage, i.e., '1d6'. Damage type is enclosed within braces." value="">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Main_enhance" title="The magical enhancement bonus of this weapon. Applied to both Attack and Damage."  value="0">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Main_threat" title="The threat range of this weapon, meaning, the lowest NATURAL d20 attack roll which will threaten a critical hit." value="20">&nbsp;</td>
+                <td> X <input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Main_critMultiplier" title="The damage multiplier, if this weapon scores a critical hit" value="2">&nbsp;</td>
+                <td><select name="attr_Weapon_Main_ability" class="sheet-inputbox" title="Is this weapon's attack roll based on STR or DEX?" style="width: 60px;">
+                    <option checked>STR</option>
+                    <option>DEX</option>
+                </select>&nbsp;</td>
+                <td>&nbsp;<input type="checkbox" class="sheet-inputbox" name="attr_Weapon_Main_2H" title="Check if this weapon requires two hands to wield."> &nbsp;</td>
+            </tr>
+        </table>
+        <b>Special properties:</b> <input style="width: 375px; margin-bottom: 10px;" type="text" class="sheet-inputbox" name="attr_Weapon_Main_notes">
+        
+        <table>
+            <tr style="text-align: center; font-weight: bold;">
+                <td></td> <td>Attack</td> <td></td> <td>Magic</td> <td>Threat</td> <td>Crit</td> <td></td> <td>Dual</td>
+            </tr>
+            <tr style="text-align: center; font-weight:bold;">
+                <th><h4 style="text-align: left">Off-hand:</h4></th>
+                <td>bonus:</td> <td>Damage:</td> <td>Ench:</td> <td>range:</td> <td>multi:</td> <td>Ability:</td> <td>Wield</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Weapon_Off_name" title="the name of this weapon" style="width: 125px;">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Off_hitBonus" title="The sum of all modifiers, including masterwork weapons and Weapon Focus Feats, that apply to the attack roll ONLY." value="0">&nbsp;</td>
+                <td><input style="width: 70px" type="text" class="sheet-inputbox" name="attr_Weapon_Off_damage" title="A string expression of dice that are to be rolled for damage, i.e., '1d6'. Damage type is enclosed within braces." value="">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Off_enhance" title="The magical enhancement bonus of this weapon. Applied to both Attack and Damage."  value="0">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Off_threat" title="The threat range of this weapon, meaning, the lowest NATURAL d20 attack roll which will threaten a critical hit." value="20">&nbsp;</td>
+                <td> X <input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Off_critMultiplier" title="The damage multiplier, if this weapon scores a critical hit"  value="2">&nbsp;</td>
+                <td><select name="attr_Weapon_Off_ability" class="sheet-inputbox" title="Is this weapon's attack roll based on STR or DEX?" style="width: 60px;">
+                    <option checked>STR</option>
+                    <option>DEX</option>
+                </select>&nbsp;</td>
+                <td>&nbsp;<input type="checkbox" class="sheet-inputbox" name="attr_2Weapon" title="Check if you will be weilding two weapons simultaneously. (Two-Weapon Fighting)"> &nbsp;</td>
+            </tr>
+        </table>
+        <b>Special properties:</b> <input style="width: 375px" type="text" class="sheet-inputbox" name="attr_Weapon_Off_notes">
+        &nbsp;<br>
+
+        <table>
+            <tr style="text-align: center; font-weight: bold;">
+                <td></td> <td>Attack</td> <td></td> <td>Magic</td> <td>Threat</td> <td>Crit</td> <td>Range</td> <td style="font-size: 90%">Apply</td>
+            </tr>
+            <tr style="text-align: center; font-weight:bold;">
+                <th><h4 style="text-align: left">Ranged weapon:</h4></th>
+                <td>bonus:</td> <td>Damage:</td> <td>Ench:</td> <td>range:</td> <td>multi:</td> <td>incr:</td> <td>STR?</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Weapon_Ranged_name" title="the name of this weapon" style="width: 125px;">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Ranged_hitBonus" title="The sum of all modifiers, including masterwork weapons and Weapon Focus Feats, that apply to the attack roll ONLY." value="0">&nbsp;</td>
+                <td><input style="width: 70px" type="text" class="sheet-inputbox" name="attr_Weapon_Ranged_damage" title="A string expression of dice that are to be rolled for damage, i.e., '1d6'. Damage type is enclosed within braces." value="">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Ranged_enhance" title="The magical enhancement bonus of this weapon. Applied to both Attack and Damage." value="0">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Ranged_threat" title="The threat range of this weapon, meaning, the lowest NATURAL d20 attack roll which will threaten a critical hit." value="20">&nbsp;</td>
+                <td> X <input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Weapon_Ranged_critMultiplier" title="The damage multiplier, if this weapon scores a critical hit"  value="2">&nbsp;</td>
+                <td><input style="width: 55px" type="number" class="sheet-inputbox" name="attr_Weapon_Ranged_range" title="For every additional Range increment beyond the first, there is a -2 Range penalty to the attack roll." value="0">&nbsp;</td>
+                <td>&nbsp; &nbsp;<input type="checkbox" class="sheet-inputbox" name="attr_Weapon_Ranged_applySTR" title="Check to apply STRENGTH bonus to weapon damage." style="margin: 0px; padding: 0px;"> &nbsp;</td>
+            </tr>
+        </table>
+        <b>Special properties:</b> <input style="width: 375px; margin-top: 5px; margin-bottom: 10px;" type="text" class="sheet-inputbox" name="attr_Weapon_Ranged_notes"><br>
+
+        <table>
+            <tr style="text-align: center;">
+                <th><h5 style="text-align: left; width: 128px"><input type='radio' value='0' name='attr_Weapon_Ammo_type' checked='true' />&nbsp; Default</h5></th>
+                <td style="text-align: right">( Use the attack and damage values listed above. )</td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr style="text-align: center; font-weight:bold; font-size: 0.8em;">
+                <th><h5 style="text-align: left"><input type='radio' value='1' name='attr_Weapon_Ammo_type' />&nbsp; Ammunition 1:</h5></th>
+                <td>Quantity:</td> <td>Attack:</td> <td>Damage:</td> <td>Special properties:</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Weapon_Ammo1_name" style="width: 125px;">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Weapon_Ammo1_quantity" value="0">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Weapon_Ammo1_hitBonus" value="">&nbsp;</td>
+                <td><input style="width: 70px" type="text" class="sheet-inputbox" name="attr_Weapon_Ammo1_damageBonus" value="">&nbsp;</td>
+                <td><input style="width: 175px" type="text" class="sheet-inputbox" name="attr_Weapon_Ammo1_notes" value="">&nbsp;</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr style="text-align: center; font-weight:bold; font-size: 0.8em;">
+                <th><h5 style="text-align: left"><input type='radio' value='2' name='attr_Weapon_Ammo_type' />&nbsp; Ammunition 2:</h5></th>
+                <td>Quantity:</td> <td>Attack:</td> <td>Damage:</td> <td>Special properties:</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Weapon_Ammo2_name" style="width: 125px;">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Weapon_Ammo2_quantity" value="0">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Weapon_Ammo2_hitBonus" value="">&nbsp;</td>
+                <td><input style="width: 70px" type="text" class="sheet-inputbox" name="attr_Weapon_Ammo2_damageBonus" value="">&nbsp;</td>
+                <td><input style="width: 175px" type="text" class="sheet-inputbox" name="attr_Weapon_Ammo2_notes" value="">&nbsp;</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr style="text-align: center; font-weight:bold; font-size: 0.8em;">
+                <th><h5 style="text-align: left"><input type='radio' value='3' name='attr_Weapon_Ammo_type' />&nbsp; Ammunition 3:</h5></th>
+                <td>Quantity:</td> <td>Attack:</td> <td>Damage:</td> <td>Special properties:</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Weapon_Ammo3_name" style="width: 125px;">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Weapon_Ammo3_quantity" value="0">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Weapon_Ammo3_hitBonus" value="">&nbsp;</td>
+                <td><input style="width: 70px" type="text" class="sheet-inputbox" name="attr_Weapon_Ammo3_damageBonus" value="">&nbsp;</td>
+                <td><input style="width: 175px" type="text" class="sheet-inputbox" name="attr_Weapon_Ammo3_notes" value="">&nbsp;</td>
+            </tr>
+        </table>
+        <br>
+        
+        <h3 style="text-align: center; background-color: #000000; color: #FFF;">Armor equipped</h3><br>
+        <table>
+            <tr style="text-align: center; font-weight: bold;">
+                <td></td> <td>Armor</td> <td>Max</td> <td>Check</td> <td> </td> <td>Arcane</td> <td>Encumber.</td>
+            </tr>
+            <tr style="text-align: center; font-weight:bold;">
+                <th><h4 style="text-align: left">Worn on body:</h4></th>
+                <td>bonus:</td> <td>Dex:</td><td>penalty:</td> <td>Weight:</td> <td>fail:</td> <td>Type:</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Armor_Body_name" style="width: 140px;">&nbsp;</td>
+                <td><input style="width: 45px" type="number" class="sheet-inputbox" name="attr_Armor_Body_armorBonus" value="0">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Armor_Body_maxDex" value="">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Armor_Body_checkPenalty" value="0">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Armor_Body_weight" value="0">&nbsp;</td>
+                <td><input style="width: 45px" type="number" class="sheet-inputbox" name="attr_Armor_Body_spellFailure" value="0">&nbsp;</td>
+                <td><select name="attr_Armor_Body_encumberance" class="sheet-inputbox" title="The armor's encumberance category" style="width: 80px;">
+                    <option checked>none</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>heavy</option>
+                    <option>force</option> <!-- use this value for spells like Mage Armor -->
+                </select>&nbsp;</td>
+            </tr>
+        </table>
+        <b>Special properties:</b> <input style="width: 375px; margin-bottom: 10px;" type="text" class="sheet-inputbox" name="attr_Armor_Body_notes">
+
+        <table>
+            <tr style="text-align: center; font-weight: bold;">
+                <td></td> <td>Armor</td> <td>Max</td> <td>Check</td> <td> </td> <td>Arcane</td> <td>Encumber.</td>
+            </tr>
+            <tr style="text-align: center; font-weight:bold;">
+                <th><h4 style="text-align: left">Carried (shield):</h4></th>
+                <td>bonus:</td> <td>Dex:</td><td>penalty:</td> <td>Weight:</td> <td>fail:</td> <td>Type:</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Armor_Shield_name" style="width: 140px;">&nbsp;</td>
+                <td><input style="width: 45px" type="number" class="sheet-inputbox" name="attr_Armor_Shield_armorBonus" value="0">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Armor_Shield_maxDex" value="">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Armor_Shield_checkPenalty" value="0">&nbsp;</td>
+                <td><input style="width: 50px" type="number" class="sheet-inputbox" name="attr_Armor_Shield_weight" value="0">&nbsp;</td>
+                <td><input style="width: 45px" type="number" class="sheet-inputbox" name="attr_Armor_Shield_spellFailure" value="0">&nbsp;</td>
+                <td><select name="attr_Armor_Shield_encumberance" class="sheet-inputbox" title="The armor's encumberance category" style="width: 80px;">
+                    <option checked>none</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>heavy</option>
+                    <option>force</option> <!-- use this value for spells like Mage Armor -->
+                </select>&nbsp;</td>
+            </tr>
+        </table>
+        <b>Special properties:</b> <input style="width: 375px; margin-bottom: 10px;" type="text" class="sheet-inputbox" name="attr_Armor_Shield_notes">
+        &nbsp;<br>
+
+        <h3 style="text-align: center; background-color: #000000; color: #FFF;">Items equipped</h3><br>
+        <table>
+            <tr style="text-align: center; font-weight: bold;">
+                <td></td> <td>Attack</td> <td>Save</td> <td></td> <td> </td> <td>Range</td> <td> </td>
+            </tr>
+            <tr style="text-align: center; font-weight:bold;">
+                <th><h4 style="text-align: left">Item 1:</h4></th>
+                <td>bonus:</td> <td>DC:</td><td>Damage:</td> <td>Charge:</td> <td>incr:</td> <td>Type:</td>
+            </tr>
+            <tr>
+                <td><input type="text" class="sheet-inputbox-primary" name="attr_Item1_name" style="width: 125px;">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Item1_attackBonus" value="0">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Item1_saveDC" value="">&nbsp;</td>
+                <td><input style="width: 75px" type="text" class="sheet-inputbox" name="attr_Item1_damage" value="">&nbsp;</td>
+                <td><input style="width: 45px" type="number" class="sheet-inputbox" name="attr_Item1_charges" value="0">&nbsp;</td>
+                <td><input style="width: 40px" type="number" class="sheet-inputbox" name="attr_Item1_range" value="0">&nbsp;</td>
+                <td><select style="width: 90px;" name="attr_Item1_type" class="sheet-inputbox" title="What type of item is this?">
+                    <option checked>held</option>
+                    <option>worn</option>
+                    <option>consumed</option>
+                    <option>alchemical</option>
+                    <option>grenade-like</option>
+                    <option>melee</option>
+                    <option>melee touch</option>
+                    <option>ranged</option>
+                    <option>ranged touch</option>
+                    <option>area</option>
+                </select>&nbsp;</td>
+            </tr>
+        </table>
+        <b>Special properties:</b> <input style="width: 375px; margin-bottom: 10px;" type="text" class="sheet-inputbox" name="attr_Item1_notes">
+        <br>
+    </div>
+    
+    <div class='sheet-col' style="width: 320px; margin-right: 5px; padding-right: 0px;"> <!-- Second column: INVENTORY displayed on the right -->
+        <h3 style="text-align: center; background-color: #000000; color: #FFF;">Inventory (backpack)</h3>
+        <br>
+        <textarea name="attr_Inventory" class="sheet-inputbox" style="width: 310px; height: 840px;">Inventory goes here.</textarea>
+        <br>
+        <h3 style="text-align: center; background-color: #000000; color: #FFF;">Currency, Gems, & Jewels</h3>
+        <br>
+        <textarea name="attr_Currency" class="sheet-inputbox" style="width: 310px; height: 97px;">Currency goes here.</textarea>
+        <br>
+    </div>
+</div> <!-- WEAPONS, ARMOR, and INVENTORY -->
+
+<div class="sheet-character-sheet sheet-spell"> <!-- Seventh block: SPELL LISTS -->
+<!-- the reason that this code is so lengthy is because Roll20 does not allow "repeating fields" within "repeating fields". -->
+    <h3 style="text-align: center; background-color: #000000; color: #FFF;">Spells</h3>
+    <br>
+    <div class='sheet-2colrow'> 
+        <div class='sheet-col' style="width: 400px; margin-right: 5px; padding-right: 0px;"> <!-- First column -->
+            <input class="sheet-inputbox-fakelabel" name="attr_SpellList1_Label" type="text" value="Spell List 1" style="text-align: center; width: 400px;"/>
+    <!-- SPELL LIST 1, LEVEL 0 -->
+            <table style="margin-top: 5px;">
+                <tr>
+                    <td style="text-align: center; background-color: #000000; color: #FFF; width: 130px; font-size: 130%; font-weight: bold;">
+                        0-level spells:</td>
+                    <td style="width: 20px;">&nbsp;</td>
+                    <td><h4>Prepare:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellPrepL1L0" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can prepare (if your class is one that prepares spells beforehand)"/>&nbsp;</td>
+                    <td><h4>&nbsp; Known:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellKnownL1L0" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can know (if your class is one with a limited number of spells known)"/></td>
+                </tr>
+            </table>
+            <hr style="border-color: #000000; margin: 5px; margin-left: 0px;">
+            <fieldset class="repeating_SpellList1Level0">
+                <table style="margin: 0px;">
+                    <tr> <!-- header row -->
+                        <td style="width: 10px;">&nbsp;</td>
+                        <td style="text-align: left; font-size: 110%; font-weight: bold;">Name:</td>
+                        <td style="text-align: right; font-weight: bold;">School:</td>
+                        <td style="text-align: right; font-weight: bold;">Save DC:</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30px;">&nbsp;</td>
+                        <td><input class="sheet-inputbox-primary" name="attr_SpellName" type="text" style=" width: 170px; font-size: 110%; font-weight: bold;"/>&nbsp;</td>
+                        <td><select name="attr_SpellSchool" class="sheet-inputbox" title="this spell's school" style="width: 120px">
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Transmutation</option>        
+                            <option><i>universal</i></option>
+                        </select></td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" name="attr_SpellDC" type="number" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <textarea name="attr_SpellDesc" class="sheet-inputbox" style="width: 350px; height: 40px; margin-left: 32px; margin-right: 0px;">Spell description goes here.</textarea>
+            </fieldset> <!-- end of repeating field: SpellList1Level0 -->
+    <!-- End of SPELL LIST 1, LEVEL 0 -->
+
+    <!-- SPELL LIST 1, LEVEL 1 -->
+            <table style="margin-top: 5px;">
+                <tr>
+                    <td style="text-align: center; background-color: #000000; color: #FFF; width: 130px; font-size: 130%; font-weight: bold;">
+                        1st level spells:</td>
+                    <td style="width: 20px;">&nbsp;</td>
+                    <td><h4>Prepare:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellPrepL1L1" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can prepare (if your class is one that prepares spells beforehand)"/>&nbsp;</td>
+                    <td><h4>&nbsp; Known:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellKnownL1L1" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can know (if your class is one with a limited number of spells known)"/></td>
+                </tr>
+            </table>
+            <hr style="border-color: #000000; margin: 5px; margin-left: 0px;">
+            <fieldset class="repeating_SpellList1Level1">
+                <table style="margin: 0px;">
+                    <tr> <!-- header row -->
+                        <td style="width: 10px;">&nbsp;</td>
+                        <td style="text-align: left; font-size: 110%; font-weight: bold;">Name:</td>
+                        <td style="text-align: right; font-weight: bold;">School:</td>
+                        <td style="text-align: right; font-weight: bold;">Save DC:</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30px;">&nbsp;</td>
+                        <td><input class="sheet-inputbox-primary" name="attr_SpellName" type="text" style=" width: 170px; font-size: 110%; font-weight: bold;"/>&nbsp;</td>
+                        <td><select name="attr_SpellSchool" class="sheet-inputbox" title="this spell's school" style="width: 120px">
+                            <option selected></option>
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Transmutation</option>        
+                            <option><i>universal</i></option>
+                        </select></td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" name="attr_SpellDC" type="number" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <textarea name="attr_SpellDesc" class="sheet-inputbox" style="width: 350px; height: 40px; margin-left: 32px; margin-right: 0px;">Spell description goes here.</textarea>
+            </fieldset> <!-- end of repeating field: SpellList1Level1 -->
+    <!-- End of SPELL LIST 1, LEVEL 1 -->
+
+    <!-- SPELL LIST 1, LEVEL 2 -->
+            <table style="margin-top: 5px;">
+                <tr>
+                    <td style="text-align: center; background-color: #000000; color: #FFF; width: 130px; font-size: 130%; font-weight: bold;">
+                        2nd level spells:</td>
+                    <td style="width: 20px;">&nbsp;</td>
+                    <td><h4>Prepare:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellPrepL1L2" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can prepare (if your class is one that prepares spells beforehand)"/>&nbsp;</td>
+                    <td><h4>&nbsp; Known:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellKnownL1L2" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can know (if your class is one with a limited number of spells known)"/></td>
+                </tr>
+            </table>
+            <hr style="border-color: #000000; margin: 5px; margin-left: 0px;">
+            <fieldset class="repeating_SpellList1Level2">
+                <table style="margin: 0px;">
+                    <tr> <!-- header row -->
+                        <td style="width: 10px;">&nbsp;</td>
+                        <td style="text-align: left; font-size: 110%; font-weight: bold;">Name:</td>
+                        <td style="text-align: right; font-weight: bold;">School:</td>
+                        <td style="text-align: right; font-weight: bold;">Save DC:</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30px;">&nbsp;</td>
+                        <td><input class="sheet-inputbox-primary" name="attr_SpellName" type="text" style=" width: 170px; font-size: 110%; font-weight: bold;"/>&nbsp;</td>
+                        <td><select name="attr_SpellSchool" class="sheet-inputbox" title="this spell's school" style="width: 120px">
+                            <option selected></option>
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Transmutation</option>        
+                            <option><i>universal</i></option>
+                        </select></td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" name="attr_SpellDC" type="number" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <textarea name="attr_SpellDesc" class="sheet-inputbox" style="width: 350px; height: 40px; margin-left: 32px; margin-right: 0px;">Spell description goes here.</textarea>
+            </fieldset> <!-- end of repeating field: SpellList1Level2 -->
+    <!-- End of SPELL LIST 1, LEVEL 2 -->
+
+    <!-- SPELL LIST 1, LEVEL 3 -->
+            <table style="margin-top: 5px;">
+                <tr>
+                    <td style="text-align: center; background-color: #000000; color: #FFF; width: 130px; font-size: 130%; font-weight: bold;">
+                        3rd level spells:</td>
+                    <td style="width: 20px;">&nbsp;</td>
+                    <td><h4>Prepare:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellPrepL1L3" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can prepare (if your class is one that prepares spells beforehand)"/>&nbsp;</td>
+                    <td><h4>&nbsp; Known:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellKnownL1L3" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can know (if your class is one with a limited number of spells known)"/></td>
+                </tr>
+            </table>
+            <hr style="border-color: #000000; margin: 5px; margin-left: 0px;">
+            <fieldset class="repeating_SpellList1Level3">
+                <table style="margin: 0px;">
+                    <tr> <!-- header row -->
+                        <td style="width: 10px;">&nbsp;</td>
+                        <td style="text-align: left; font-size: 110%; font-weight: bold;">Name:</td>
+                        <td style="text-align: right; font-weight: bold;">School:</td>
+                        <td style="text-align: right; font-weight: bold;">Save DC:</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30px;">&nbsp;</td>
+                        <td><input class="sheet-inputbox-primary" name="attr_SpellName" type="text" style=" width: 170px; font-size: 110%; font-weight: bold;"/>&nbsp;</td>
+                        <td><select name="attr_SpellSchool" class="sheet-inputbox" title="this spell's school" style="width: 120px">
+                            <option selected></option>
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Transmutation</option>        
+                            <option><i>universal</i></option>
+                        </select></td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" name="attr_SpellDC" type="number" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <textarea name="attr_SpellDesc" class="sheet-inputbox" style="width: 350px; height: 40px; margin-left: 32px; margin-right: 0px;">Spell description goes here.</textarea>
+            </fieldset> <!-- end of repeating field: SpellList1Level3 -->
+    <!-- End of SPELL LIST 1, LEVEL 3 -->
+        </div> <!-- end of first SPELL column -->
+
+        <div class='sheet-col' style="width: 400px; margin-left: 5px; padding-left: 0px;"> <!-- Second column -->
+            <input class="sheet-inputbox-fakelabel" name="attr_SpellList2_Label" type="text" value="Spell List 2" style="text-align: center; width: 400px;"/>
+    <!-- SPELL LIST 2, LEVEL 0 -->
+            <table style="margin-top: 5px;">
+                <tr>
+                    <td style="text-align: center; background-color: #000000; color: #FFF; width: 130px; font-size: 130%; font-weight: bold;">
+                        0-level spells:</td>
+                    <td style="width: 20px;">&nbsp;</td>
+                    <td><h4>Prepare:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellPrepL2L0" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can prepare (if your class is one that prepares spells beforehand)"/>&nbsp;</td>
+                    <td><h4>&nbsp; Known:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellKnownL2L0" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can know (if your class is one with a limited number of spells known)"/></td>
+                </tr>
+            </table>
+            <hr style="border-color: #000000; margin: 5px; margin-left: 0px;">
+            <fieldset class="repeating_SpellList2Level0">
+                <table style="margin: 0px;">
+                    <tr> <!-- header row -->
+                        <td style="width: 10px;">&nbsp;</td>
+                        <td style="text-align: left; font-size: 110%; font-weight: bold;">Name:</td>
+                        <td style="text-align: right; font-weight: bold;">School:</td>
+                        <td style="text-align: right; font-weight: bold;">Save DC:</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30px;">&nbsp;</td>
+                        <td><input class="sheet-inputbox-primary" name="attr_SpellName" type="text" style=" width: 170px; font-size: 110%; font-weight: bold;"/>&nbsp;</td>
+                        <td><select name="attr_SpellSchool" class="sheet-inputbox" title="this spell's school" style="width: 120px">
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Transmutation</option>        
+                            <option><i>universal</i></option>
+                        </select></td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" name="attr_SpellDC" type="number" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <textarea name="attr_SpellDesc" class="sheet-inputbox" style="width: 350px; height: 40px; margin-left: 32px; margin-right: 0px;">Spell description goes here.</textarea>
+            </fieldset> <!-- end of repeating field: SpellList2Level0 -->
+    <!-- End of SPELL LIST 2, LEVEL 0 -->
+
+    <!-- SPELL LIST 2, LEVEL 1 -->
+            <table style="margin-top: 5px;">
+                <tr>
+                    <td style="text-align: center; background-color: #000000; color: #FFF; width: 130px; font-size: 130%; font-weight: bold;">
+                        1st level spells:</td>
+                    <td style="width: 20px;">&nbsp;</td>
+                    <td><h4>Prepare:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellPrepL2L1" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can prepare (if your class is one that prepares spells beforehand)"/>&nbsp;</td>
+                    <td><h4>&nbsp; Known:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellKnownL2L1" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can know (if your class is one with a limited number of spells known)"/></td>
+                </tr>
+            </table>
+            <hr style="border-color: #000000; margin: 5px; margin-left: 0px;">
+            <fieldset class="repeating_SpellList2Level1">
+                <table style="margin: 0px;">
+                    <tr> <!-- header row -->
+                        <td style="width: 10px;">&nbsp;</td>
+                        <td style="text-align: left; font-size: 110%; font-weight: bold;">Name:</td>
+                        <td style="text-align: right; font-weight: bold;">School:</td>
+                        <td style="text-align: right; font-weight: bold;">Save DC:</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30px;">&nbsp;</td>
+                        <td><input class="sheet-inputbox-primary" name="attr_SpellName" type="text" style=" width: 170px; font-size: 110%; font-weight: bold;"/>&nbsp;</td>
+                        <td><select name="attr_SpellSchool" class="sheet-inputbox" title="this spell's school" style="width: 120px">
+                            <option selected></option>
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Transmutation</option>        
+                            <option><i>universal</i></option>
+                        </select></td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" name="attr_SpellDC" type="number" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <textarea name="attr_SpellDesc" class="sheet-inputbox" style="width: 350px; height: 40px; margin-left: 32px; margin-right: 0px;">Spell description goes here.</textarea>
+            </fieldset> <!-- end of repeating field: SpellList2Level1 -->
+    <!-- End of SPELL LIST 2, LEVEL 1 -->
+
+    <!-- SPELL LIST 2, LEVEL 2 -->
+            <table style="margin-top: 5px;">
+                <tr>
+                    <td style="text-align: center; background-color: #000000; color: #FFF; width: 130px; font-size: 130%; font-weight: bold;">
+                        2nd level spells:</td>
+                    <td style="width: 20px;">&nbsp;</td>
+                    <td><h4>Prepare:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellPrepL2L2" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can prepare (if your class is one that prepares spells beforehand)"/>&nbsp;</td>
+                    <td><h4>&nbsp; Known:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellKnownL2L2" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can know (if your class is one with a limited number of spells known)"/></td>
+                </tr>
+            </table>
+            <hr style="border-color: #000000; margin: 5px; margin-left: 0px;">
+            <fieldset class="repeating_SpellList2Level2">
+                <table style="margin: 0px;">
+                    <tr> <!-- header row -->
+                        <td style="width: 10px;">&nbsp;</td>
+                        <td style="text-align: left; font-size: 110%; font-weight: bold;">Name:</td>
+                        <td style="text-align: right; font-weight: bold;">School:</td>
+                        <td style="text-align: right; font-weight: bold;">Save DC:</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30px;">&nbsp;</td>
+                        <td><input class="sheet-inputbox-primary" name="attr_SpellName" type="text" style=" width: 170px; font-size: 110%; font-weight: bold;"/>&nbsp;</td>
+                        <td><select name="attr_SpellSchool" class="sheet-inputbox" title="this spell's school" style="width: 120px">
+                            <option selected></option>
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Transmutation</option>        
+                            <option><i>universal</i></option>
+                        </select></td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" name="attr_SpellDC" type="number" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <textarea name="attr_SpellDesc" class="sheet-inputbox" style="width: 350px; height: 40px; margin-left: 32px; margin-right: 0px;">Spell description goes here.</textarea>
+            </fieldset> <!-- end of repeating field: SpellList2Level2 -->
+    <!-- End of SPELL LIST 2, LEVEL 2 -->
+
+    <!-- SPELL LIST 2, LEVEL 3 -->
+            <table style="margin-top: 5px;">
+                <tr>
+                    <td style="text-align: center; background-color: #000000; color: #FFF; width: 130px; font-size: 130%; font-weight: bold;">
+                        3rd level spells:</td>
+                    <td style="width: 20px;">&nbsp;</td>
+                    <td><h4>Prepare:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellPrepL2L3" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can prepare (if your class is one that prepares spells beforehand)"/>&nbsp;</td>
+                    <td><h4>&nbsp; Known:</h4></td>
+                    <td><input class="sheet-inputbox-disabled" name="attr_SpellKnownL2L3" style="width: 50px;" type="number" min="0" title="The number of spells of this level that you can know (if your class is one with a limited number of spells known)"/></td>
+                </tr>
+            </table>
+            <hr style="border-color: #000000; margin: 5px; margin-left: 0px;">
+            <fieldset class="repeating_SpellList2Level3">
+                <table style="margin: 0px;">
+                    <tr> <!-- header row -->
+                        <td style="width: 10px;">&nbsp;</td>
+                        <td style="text-align: left; font-size: 110%; font-weight: bold;">Name:</td>
+                        <td style="text-align: right; font-weight: bold;">School:</td>
+                        <td style="text-align: right; font-weight: bold;">Save DC:</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30px;">&nbsp;</td>
+                        <td><input class="sheet-inputbox-primary" name="attr_SpellName" type="text" style=" width: 170px; font-size: 110%; font-weight: bold;"/>&nbsp;</td>
+                        <td><select name="attr_SpellSchool" class="sheet-inputbox" title="this spell's school" style="width: 120px">
+                            <option selected></option>
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Transmutation</option>        
+                            <option><i>universal</i></option>
+                        </select></td>
+                        <td>&nbsp;<input class="sheet-inputbox-disabled" name="attr_SpellDC" type="number" style="width: 60px;"></td>
+                    </tr>
+                </table>
+                <textarea name="attr_SpellDesc" class="sheet-inputbox" style="width: 350px; height: 40px; margin-left: 32px; margin-right: 0px;">Spell description goes here.</textarea>
+            </fieldset> <!-- end of repeating field: SpellList2Level3 -->
+    <!-- End of SPELL LIST 2, LEVEL 3 -->
+        </div> <!-- end of first SPELL column -->
+    </div>
+</div>
+<br>
+<div class="sheet-character-sheet sheet-attack-modes">  <!-- Eighth block: SPECIAL ATTACK FORMS -->
+    <h3 style="text-align: center; background-color: #707070; color: #FFF;">Attack Modes</h3><br>
+    <table>
+        <tr>
+            <td><input type="checkbox" class="sheet-inputbox" name="attr_AttackForm_FullAttack" title="Check if you will be using a 'Full Attack' action, in order to make multiple attack this round.">
+                <b>Full Attack actions:</b> &nbsp; &nbsp;</td>
+            <td>"Main hand" weapon attack sequence: &nbsp;</td>
+            <td><input class="sheet-inputbox" type="text" name="attr_AttackForm_FullAttack_Main_sequence_max" style="width: 120px;"></td>
+            <td>&nbsp; ( Full Attack action using this weapon in one hand. )</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>"Off-hand" weapon attack sequence: &nbsp;</td>
+            <td><input class="sheet-inputbox" type="text" name="attr_AttackForm_FullAttack_Off_sequence_max" style="width: 120px;"></td>
+            <td>&nbsp; ( Full Attack action using this weapon in one hand. )</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Ranged weapon attack sequence: &nbsp;</td>
+            <td><input class="sheet-inputbox" type="text" name="attr_AttackForm_FullAttack_Ranged_sequence_max" style="width: 120px;"></td>
+            <td>&nbsp; ( Full Attack action using this Ranged weapon. )</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td><input type="checkbox" class="sheet-inputbox" name="attr_AttackForm_2Weapon" title="Check if you will be weilding two weapons simultaneously. (Two-Weapon Fighting)">
+                <b>Two-Weapon Melee Attack:</b>&nbsp; &nbsp;</td>
+            <td>Main Hand penalty:</td>
+            <td><input class="sheet-inputbox" type="number" value="-6" name="attr_AttackForm_2Weapon_Main_modifier" style="width: 60px;"></td>
+            <td>&nbsp; "Main Hand" weapon attack sequence: &nbsp;</td>
+            <td><input class="sheet-inputbox" type= "text" name="attr_AttackForm_2Weapon_Main_sequence_max" style="width: 120px;"></td>
+        </tr>
+        <tr>
+            <td>(Also found in Off-hand weapon section.) &nbsp; &nbsp;</td>
+            <td>Off-Hand penalty:</td>
+            <td><input class="sheet-inputbox" type="number"  value="-10" name="attr_AttackForm_2Weapon_Off_modifier" style="width: 60px;"></td>
+            <td>&nbsp; "Off-Hand" weapon attack sequence: &nbsp;</td>
+            <td><input class="sheet-inputbox" type= "text" name="attr_AttackForm_2Weapon_Off_sequence_max" style="width: 120px;"></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td><input type="checkbox" class="sheet-inputbox" name="attr_AttackForm_Charge" title="Check if you wish to make a Charge attack action">
+                <b>"Charge!" Attack action:</b>&nbsp; &nbsp;</td>
+            <td>Attack roll bonus: &nbsp;</td>
+            <td><input class="sheet-inputbox" type="number" value="2" name="attr_AttackForm_Charge_bonus" style="width: 60px;"></td>
+            <td>&nbsp; Armor Class penalty: &nbsp;</td>
+            <td><input class="sheet-inputbox" type= "number" value="-2" name="attr_AttackForm_Charge_penalty" style="width: 60px;"></td>
+            <td>&nbsp; ( Move up to double your speed and attack.) </td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td><input type="checkbox" class="sheet-inputbox" name="attr_AttackForm_FightDefensively" title="Check if you wish to Fight Defensively (The Combat Expertise Feat will improve these numbers.)">
+                <b>Fight Defensively:</b>&nbsp; &nbsp;</td>
+            <td>Attack roll penalty: &nbsp;</td>
+            <td><input class="sheet-inputbox" type="number" value="-4" name="attr_AttackForm_FightDefensively_penalty" style="width: 60px;"></td>
+            <td>&nbsp; Dodge bonus to Armor Class: &nbsp;</td>
+            <td><input class="sheet-inputbox" type= "number" value="2" name="attr_AttackForm_FightDefensively_bonus" style="width: 60px;"></td>
+            <td>&nbsp; ( Improved by <b>Combat Expertise</b> Feat )</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td><input type="checkbox" class="sheet-inputbox" name="attr_AttackForm_PowerAttack" title="Check to use the Power Attack feat in melee. You must possess the Power Attack feat to do this.">
+                <b>Power Attack action:</b>&nbsp; &nbsp;</td>
+            <td>Melee attack roll penalty: &nbsp;</td>
+            <td><input class="sheet-inputbox" type="number" value="0" name="attr_AttackForm_PowerAttack_penalty" style="width: 60px;"></td>
+            <td>&nbsp; Damage bonus: &nbsp;</td>
+            <td><input class="sheet-inputbox" type= "number" value="0" name="attr_AttackForm_PowerAttack_bonus" style="width: 60px;"></td>
+            <td>&nbsp; ( Used only with the <b>Power Attack</b> Feat )</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td><input type="checkbox" class="sheet-inputbox" name="attr_AttackForm_DeadlyAim" title="Check to use the Deadly Aim feat in ranged combat. You must possess the Deadly Aim feat to do this.">
+                <b>Deadly Aim action:</b>&nbsp; &nbsp;</td>
+            <td>Ranged attack roll penalty: &nbsp;</td>
+            <td><input class="sheet-inputbox" type="number" value="0" name="attr_AttackForm_DeadlyAim_penalty" style="width: 60px;"></td>
+            <td>&nbsp; Damage bonus: &nbsp;</td>
+            <td><input class="sheet-inputbox" type= "number" value="0" name="attr_AttackForm_DeadlyAim_bonus" style="width: 60px;"></td>
+            <td>&nbsp; ( Used only with the <b>Deadly Aim</b> Feat )</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td><input type="checkbox" class="sheet-inputbox" name="attr_AttackForm_TotalDefense" title="Check if you will be using a 'Total Defense' action, making no attack this round, but protecting yourself as much as possible.">
+                <b>Total Defense action:</b> &nbsp; &nbsp;</td>
+            <td>Dodge bonus to Armor Class: &nbsp;</td>
+            <td><input class="sheet-inputbox" type= "number" value="4" name="attr_AttackForm_TotalDefense_bonus" style="width: 60px;"></td>
+            <td>&nbsp; ( If you will not be making any attack for this round.)</td>
+        </tr>
+    </table>
+    <br>
+</div>
+
+<div class="sheet-character-sheet sheet-miscellaneous-fields">
+    <h3 style="text-align: center; background-color: #707070; color: #FFF;">Miscellaneous Fields (for Storyteller use)</h3><br>
+    <div style="float: left; width: 130px; display: inline-block;">
+        <h4 style="text-align: center;">&nbsp; Creature Type</h4>
+        <select name="attr_Type" class="sheet-inputbox" title="this creature's Type" style="width: 120px">
+                        <option>Aberration</option>
+                        <option>Animal</option>
+                        <option>Construct</option>
+                        <option>Dragon</option>
+                        <option>Elemental</option>
+                        <option>Fey</option>
+                        <option>Giant</option>
+                        <option selected>Humanoid</option>        
+                        <option>Magical Beast</option>   
+                        <option>Outsider</option>
+                        <option>Plant</option>
+                        <option>Shapechanger</option>
+                        <option>Undead</option>
+                        <option>Vermin</option>
+                    </select>
+    </div>
+    <div style="float: left; width: 110px; display: inline-block;">
+        <h4 style="text-align: center;">&nbsp; Attitude</h4>
+        <select name="attr_Attitude" class="sheet-inputbox" title="The creature's initial Attitude towards the Party. Set to PC if this is a Player Character." style="width: 100px">
+                        <option>PC</option>
+                        <option>helpful</option>
+                        <option>friendly</option>
+                        <option selected>indifferent</option>
+                        <option>unfriendly</option>
+                        <option>hostile</option>
+                        <option>monster</option>  <!-- use this option for mindless creatures, or those who can NEVER be anything other than hostile. -->
+                    </select>
+    </div>
+    <div style="float: left; width: 100px; display: inline-block;">
+        <h4 style="text-align: center;">&nbsp; Template?</h4>
+        &nbsp; &nbsp;
+        <input type="checkbox" class="sheet-inputbox" name="attr_Template" title="Check if this sheet is a TEMPLATE for multiple NPCs.">
+    </div>
+    <div style="float: left; width: 100px; display: inline-block;">
+        <h4 style="text-align: center;">&nbsp; Temp Attack</h4>
+        &nbsp; &nbsp; &nbsp;
+        <input name="attr_Temp_Attack_Bonus" type="number" value='0' class="sheet-inputbox" title="Used by spell effects that give bonuses to Attack (such as Bless)." style="width: 50px"/>
+    </div>
+    <div style="float: left; width: 120px; display: inline-block;">
+        <h4 style="text-align: center;">&nbsp; Temp Damage</h4>
+        &nbsp; &nbsp; &nbsp;
+        <input name="attr_Temp_Damage_Bonus" type="number" value='0' class="sheet-inputbox" title="Used by spell effects that give bonuses to Damage." style="width: 50px"/>
+    </div>
+    <div style="float: left; width: 120px; display: inline-block;">
+        <h4 style="text-align: center;">&nbsp; Display Color</h4>
+        &nbsp; &nbsp;
+        <input name="attr_Display_Color" type="text" value='#000000' class="sheet-inputbox" title="This character's action Displays will appear with this color in the title block." style="width: 90px"/>
+    </div>
+    <div style="float: left; width: 120px; display: inline-block;">
+        <h4 style="text-align: center;">&nbsp; XP Value</h4>
+        &nbsp; &nbsp;
+        <input name="attr_XP_Value" type="number" value='0' class="sheet-inputbox" title="The XP the Party earns for defeating this creature." style="width: 90px"/>
+    </div>
+    <div style="clear: both;">&nbsp;</div>
+    
+    <div style="float: left; width: 100px; display: inline-block;">
+        <h4 style="text-align: center;">Cover AC bonus</h4>
+        &nbsp; &nbsp; &nbsp;
+        <input name="attr_Cover" type="number" value='0' class="sheet-inputbox" title="The AC bonus granted by this creature's Cover. Should be +4 for normal cover, +2 for partial cover, and +8 for improved cover. Half of this value will also be applied as a bonus to Reflex saves." style="width: 50px"/>
+    </div>
+    <div style="float: left; width: 100px; display: inline-block;">
+        <h4 style="text-align: center;">Concealment miss chance</h4>
+        &nbsp; &nbsp;
+        <input name="attr_Concealment" type="number" value='0' class="sheet-inputbox" title="The percent chance of an attacker missing this creature, based on Concealment. Should be 20% for partial concealment or 50% for total concealment." style="width: 50px"/>
+    </div>
+    <div style="clear: both;">&nbsp;</div>
+    
+</div>
